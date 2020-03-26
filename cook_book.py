@@ -3,7 +3,7 @@ from pprint import pprint
 
 def create_struct_from_file():
     cook_book = dict()
-    with open(r"C:\Users\user044\Desktop\recipes.txt", mode='r', encoding='utf-8') as recipes_file:
+    with open("recipes.txt", mode='r', encoding='utf-8') as recipes_file:
         for line in recipes_file:
             one_line = line.rstrip()
             if one_line == '':
